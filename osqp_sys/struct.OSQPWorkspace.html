@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `OSQPWorkspace` struct in crate `osqp_sys`."><meta name="keywords" content="rust, rustlang, rust-lang, OSQPWorkspace"><title>osqp_sys::OSQPWorkspace - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script></head><body class="rustdoc struct"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Struct OSQPWorkspace</p><div class="sidebar-elems"><div class="block items"><a class="sidebar-title" href="#fields">Fields</a><div class="sidebar-links"><a href="#structfield.data">data</a><a href="#structfield.linsys_solver">linsys_solver</a><a href="#structfield.pol">pol</a><a href="#structfield.rho_vec">rho_vec</a><a href="#structfield.rho_inv_vec">rho_inv_vec</a><a href="#structfield.constr_type">constr_type</a><a href="#structfield.x">x</a><a href="#structfield.y">y</a><a href="#structfield.z">z</a><a href="#structfield.xz_tilde">xz_tilde</a><a href="#structfield.x_prev">x_prev</a><a href="#structfield.z_prev">z_prev</a><a href="#structfield.Ax">Ax</a><a href="#structfield.Px">Px</a><a href="#structfield.Aty">Aty</a><a href="#structfield.delta_y">delta_y</a><a href="#structfield.Atdelta_y">Atdelta_y</a><a href="#structfield.delta_x">delta_x</a><a href="#structfield.Pdelta_x">Pdelta_x</a><a href="#structfield.Adelta_x">Adelta_x</a><a href="#structfield.D_temp">D_temp</a><a href="#structfield.D_temp_A">D_temp_A</a><a href="#structfield.E_temp">E_temp</a><a href="#structfield.settings">settings</a><a href="#structfield.scaling">scaling</a><a href="#structfield.solution">solution</a><a href="#structfield.info">info</a><a href="#structfield.timer">timer</a><a href="#structfield.first_run">first_run</a><a href="#structfield.summary_printed">summary_printed</a></div><a class="sidebar-title" href="#synthetic-implementations">Auto Trait Implementations</a><div class="sidebar-links"><a href="#impl-Send">!Send</a><a href="#impl-Sync">!Sync</a></div></div><p class='location'><a href='index.html'>osqp_sys</a></p><script>window.sidebarCurrent = {name: 'OSQPWorkspace', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>osqp_sys</a>::<wbr><a class="struct" href=''>OSQPWorkspace</a></span><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/osqp_sys/bindings.rs.html#182-243' title='goto source code'>[src]</a></span></h1><div class="docblock type-decl"><pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct OSQPWorkspace {
+    pub data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPData.html" title="struct osqp_sys::OSQPData">OSQPData</a>,
+    pub linsys_solver: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.LinSysSolver.html" title="type osqp_sys::LinSysSolver">LinSysSolver</a>,
+    pub pol: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPPolish.html" title="struct osqp_sys::OSQPPolish">OSQPPolish</a>,
+    pub rho_vec: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub rho_inv_vec: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub constr_type: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_int.html" title="type osqp_sys::osqp_int">osqp_int</a>,
+    pub x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub z: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub xz_tilde: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub x_prev: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub z_prev: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub Ax: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub Px: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub Aty: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub delta_y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub Atdelta_y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub delta_x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub Pdelta_x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub Adelta_x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub D_temp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub D_temp_A: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub E_temp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a>,
+    pub settings: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPSettings.html" title="struct osqp_sys::OSQPSettings">OSQPSettings</a>,
+    pub scaling: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPScaling.html" title="struct osqp_sys::OSQPScaling">OSQPScaling</a>,
+    pub solution: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPSolution.html" title="struct osqp_sys::OSQPSolution">OSQPSolution</a>,
+    pub info: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPInfo.html" title="struct osqp_sys::OSQPInfo">OSQPInfo</a>,
+    pub timer: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../osqp_sys/enum.OSQPTimer.html" title="enum osqp_sys::OSQPTimer">OSQPTimer</a>,
+    pub first_run: <a class="type" href="../osqp_sys/type.osqp_int.html" title="type osqp_sys::osqp_int">osqp_int</a>,
+    pub summary_printed: <a class="type" href="../osqp_sys/type.osqp_int.html" title="type osqp_sys::osqp_int">osqp_int</a>,
+}</pre></div><div class='docblock'><p>OSQP Workspace</p>
+</div><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id="structfield.data" class="structfield small-section-header">
+                           <a href="#structfield.data" class="anchor field"></a>
+                           <span id="data.v" class='invisible'>
+                           <code>data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPData.html" title="struct osqp_sys::OSQPData">OSQPData</a></code>
+                           </span></span><div class='docblock'><p>Problem data to work on (possibly scaled)</p>
+</div><span id="structfield.linsys_solver" class="structfield small-section-header">
+                           <a href="#structfield.linsys_solver" class="anchor field"></a>
+                           <span id="linsys_solver.v" class='invisible'>
+                           <code>linsys_solver: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.LinSysSolver.html" title="type osqp_sys::LinSysSolver">LinSysSolver</a></code>
+                           </span></span><div class='docblock'><p>Linear System solver structure</p>
+</div><span id="structfield.pol" class="structfield small-section-header">
+                           <a href="#structfield.pol" class="anchor field"></a>
+                           <span id="pol.v" class='invisible'>
+                           <code>pol: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPPolish.html" title="struct osqp_sys::OSQPPolish">OSQPPolish</a></code>
+                           </span></span><div class='docblock'><p>Polish structure</p>
+</div><span id="structfield.rho_vec" class="structfield small-section-header">
+                           <a href="#structfield.rho_vec" class="anchor field"></a>
+                           <span id="rho_vec.v" class='invisible'>
+                           <code>rho_vec: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; vector of rho values</p>
+</div><span id="structfield.rho_inv_vec" class="structfield small-section-header">
+                           <a href="#structfield.rho_inv_vec" class="anchor field"></a>
+                           <span id="rho_inv_vec.v" class='invisible'>
+                           <code>rho_inv_vec: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; vector of inv rho values</p>
+</div><span id="structfield.constr_type" class="structfield small-section-header">
+                           <a href="#structfield.constr_type" class="anchor field"></a>
+                           <span id="constr_type.v" class='invisible'>
+                           <code>constr_type: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_int.html" title="type osqp_sys::osqp_int">osqp_int</a></code>
+                           </span></span><div class='docblock'><p>&lt; Type of constraints: loose (-1), equality (1),</p>
+</div><span id="structfield.x" class="structfield small-section-header">
+                           <a href="#structfield.x" class="anchor field"></a>
+                           <span id="x.v" class='invisible'>
+                           <code>x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Iterate x</p>
+</div><span id="structfield.y" class="structfield small-section-header">
+                           <a href="#structfield.y" class="anchor field"></a>
+                           <span id="y.v" class='invisible'>
+                           <code>y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Iterate y</p>
+</div><span id="structfield.z" class="structfield small-section-header">
+                           <a href="#structfield.z" class="anchor field"></a>
+                           <span id="z.v" class='invisible'>
+                           <code>z: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Iterate z</p>
+</div><span id="structfield.xz_tilde" class="structfield small-section-header">
+                           <a href="#structfield.xz_tilde" class="anchor field"></a>
+                           <span id="xz_tilde.v" class='invisible'>
+                           <code>xz_tilde: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Iterate xz_tilde</p>
+</div><span id="structfield.x_prev" class="structfield small-section-header">
+                           <a href="#structfield.x_prev" class="anchor field"></a>
+                           <span id="x_prev.v" class='invisible'>
+                           <code>x_prev: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Previous x</p>
+</div><span id="structfield.z_prev" class="structfield small-section-header">
+                           <a href="#structfield.z_prev" class="anchor field"></a>
+                           <span id="z_prev.v" class='invisible'>
+                           <code>z_prev: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Previous z</p>
+</div><span id="structfield.Ax" class="structfield small-section-header">
+                           <a href="#structfield.Ax" class="anchor field"></a>
+                           <span id="Ax.v" class='invisible'>
+                           <code>Ax: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Scaled A * x</p>
+</div><span id="structfield.Px" class="structfield small-section-header">
+                           <a href="#structfield.Px" class="anchor field"></a>
+                           <span id="Px.v" class='invisible'>
+                           <code>Px: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Scaled P * x</p>
+</div><span id="structfield.Aty" class="structfield small-section-header">
+                           <a href="#structfield.Aty" class="anchor field"></a>
+                           <span id="Aty.v" class='invisible'>
+                           <code>Aty: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Scaled A * x</p>
+</div><span id="structfield.delta_y" class="structfield small-section-header">
+                           <a href="#structfield.delta_y" class="anchor field"></a>
+                           <span id="delta_y.v" class='invisible'>
+                           <code>delta_y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Difference of consecutive dual iterates</p>
+</div><span id="structfield.Atdelta_y" class="structfield small-section-header">
+                           <a href="#structfield.Atdelta_y" class="anchor field"></a>
+                           <span id="Atdelta_y.v" class='invisible'>
+                           <code>Atdelta_y: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; A' * delta_y</p>
+</div><span id="structfield.delta_x" class="structfield small-section-header">
+                           <a href="#structfield.delta_x" class="anchor field"></a>
+                           <span id="delta_x.v" class='invisible'>
+                           <code>delta_x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; Difference of consecutive primal iterates</p>
+</div><span id="structfield.Pdelta_x" class="structfield small-section-header">
+                           <a href="#structfield.Pdelta_x" class="anchor field"></a>
+                           <span id="Pdelta_x.v" class='invisible'>
+                           <code>Pdelta_x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; P * delta_x</p>
+</div><span id="structfield.Adelta_x" class="structfield small-section-header">
+                           <a href="#structfield.Adelta_x" class="anchor field"></a>
+                           <span id="Adelta_x.v" class='invisible'>
+                           <code>Adelta_x: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; A * delta_x</p>
+</div><span id="structfield.D_temp" class="structfield small-section-header">
+                           <a href="#structfield.D_temp" class="anchor field"></a>
+                           <span id="D_temp.v" class='invisible'>
+                           <code>D_temp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; temporary primal variable scaling vectors</p>
+</div><span id="structfield.D_temp_A" class="structfield small-section-header">
+                           <a href="#structfield.D_temp_A" class="anchor field"></a>
+                           <span id="D_temp_A.v" class='invisible'>
+                           <code>D_temp_A: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; temporary primal variable scaling vectors storing</p>
+</div><span id="structfield.E_temp" class="structfield small-section-header">
+                           <a href="#structfield.E_temp" class="anchor field"></a>
+                           <span id="E_temp.v" class='invisible'>
+                           <code>E_temp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="../osqp_sys/type.osqp_float.html" title="type osqp_sys::osqp_float">osqp_float</a></code>
+                           </span></span><div class='docblock'><p>&lt; temporary constraints scaling vectors storing norms of</p>
+</div><span id="structfield.settings" class="structfield small-section-header">
+                           <a href="#structfield.settings" class="anchor field"></a>
+                           <span id="settings.v" class='invisible'>
+                           <code>settings: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPSettings.html" title="struct osqp_sys::OSQPSettings">OSQPSettings</a></code>
+                           </span></span><div class='docblock'><p>&lt; Problem settings</p>
+</div><span id="structfield.scaling" class="structfield small-section-header">
+                           <a href="#structfield.scaling" class="anchor field"></a>
+                           <span id="scaling.v" class='invisible'>
+                           <code>scaling: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPScaling.html" title="struct osqp_sys::OSQPScaling">OSQPScaling</a></code>
+                           </span></span><div class='docblock'><p>&lt; Scaling vectors</p>
+</div><span id="structfield.solution" class="structfield small-section-header">
+                           <a href="#structfield.solution" class="anchor field"></a>
+                           <span id="solution.v" class='invisible'>
+                           <code>solution: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPSolution.html" title="struct osqp_sys::OSQPSolution">OSQPSolution</a></code>
+                           </span></span><div class='docblock'><p>&lt; Problem solution</p>
+</div><span id="structfield.info" class="structfield small-section-header">
+                           <a href="#structfield.info" class="anchor field"></a>
+                           <span id="info.v" class='invisible'>
+                           <code>info: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="struct" href="../osqp_sys/struct.OSQPInfo.html" title="struct osqp_sys::OSQPInfo">OSQPInfo</a></code>
+                           </span></span><div class='docblock'><p>&lt; Solver information</p>
+</div><span id="structfield.timer" class="structfield small-section-header">
+                           <a href="#structfield.timer" class="anchor field"></a>
+                           <span id="timer.v" class='invisible'>
+                           <code>timer: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="../osqp_sys/enum.OSQPTimer.html" title="enum osqp_sys::OSQPTimer">OSQPTimer</a></code>
+                           </span></span><div class='docblock'><p>&lt; Timer object</p>
+</div><span id="structfield.first_run" class="structfield small-section-header">
+                           <a href="#structfield.first_run" class="anchor field"></a>
+                           <span id="first_run.v" class='invisible'>
+                           <code>first_run: <a class="type" href="../osqp_sys/type.osqp_int.html" title="type osqp_sys::osqp_int">osqp_int</a></code>
+                           </span></span><div class='docblock'><p>flag indicating whether the solve function has been run before</p>
+</div><span id="structfield.summary_printed" class="structfield small-section-header">
+                           <a href="#structfield.summary_printed" class="anchor field"></a>
+                           <span id="summary_printed.v" class='invisible'>
+                           <code>summary_printed: <a class="type" href="../osqp_sys/type.osqp_int.html" title="type osqp_sys::osqp_int">osqp_int</a></code>
+                           </span></span><div class='docblock'><p>&lt; Has last summary been printed? (true/false)</p>
+</div>
+                <h2 id='synthetic-implementations' class='small-section-header'>
+                  Auto Trait Implementations<a href='#synthetic-implementations' class='anchor'></a>
+                </h2>
+                <div id='synthetic-implementations-list'>
+            <h3 id='impl-Send' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl !<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> for <a class="struct" href="../osqp_sys/struct.OSQPWorkspace.html" title="struct osqp_sys::OSQPWorkspace">OSQPWorkspace</a></code><a href='#impl-Send' class='anchor'></a></span></td><td><span class='out-of-band'></span></td></tr></tbody></table></h3><div class='impl-items'></div><h3 id='impl-Sync' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl !<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sync.html" title="trait core::marker::Sync">Sync</a> for <a class="struct" href="../osqp_sys/struct.OSQPWorkspace.html" title="struct osqp_sys::OSQPWorkspace">OSQPWorkspace</a></code><a href='#impl-Sync' class='anchor'></a></span></td><td><span class='out-of-band'></span></td></tr></tbody></table></h3><div class='impl-items'></div></div></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "osqp_sys";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>

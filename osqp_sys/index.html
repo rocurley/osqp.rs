@@ -1,0 +1,517 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `osqp_sys` crate."><meta name="keywords" content="rust, rustlang, rust-lang, osqp_sys"><title>osqp_sys - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Crate osqp_sys</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#constants">Constants</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'osqp_sys', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>osqp_sys</a></span><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/osqp_sys/lib.rs.html#1-123' title='goto source code'>[src]</a></span></h1><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.OSQPData.html"
+                                  title='struct osqp_sys::OSQPData'>OSQPData</a></td>
+                           <td class='docblock-short'>
+                                <p>Data structure</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.OSQPInfo.html"
+                                  title='struct osqp_sys::OSQPInfo'>OSQPInfo</a></td>
+                           <td class='docblock-short'>
+                                <p>Solver return nformation</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.OSQPPolish.html"
+                                  title='struct osqp_sys::OSQPPolish'>OSQPPolish</a></td>
+                           <td class='docblock-short'>
+                                <p>Polish structure</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.OSQPScaling.html"
+                                  title='struct osqp_sys::OSQPScaling'>OSQPScaling</a></td>
+                           <td class='docblock-short'>
+                                <p>Problem scaling matrices stored as vectors</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.OSQPSettings.html"
+                                  title='struct osqp_sys::OSQPSettings'>OSQPSettings</a></td>
+                           <td class='docblock-short'>
+                                <p>Settings struct</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.OSQPSolution.html"
+                                  title='struct osqp_sys::OSQPSolution'>OSQPSolution</a></td>
+                           <td class='docblock-short'>
+                                <p>Solution structure</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.OSQPWorkspace.html"
+                                  title='struct osqp_sys::OSQPWorkspace'>OSQPWorkspace</a></td>
+                           <td class='docblock-short'>
+                                <p>OSQP Workspace</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.csc.html"
+                                  title='struct osqp_sys::csc'>csc</a></td>
+                           <td class='docblock-short'>
+                                <p>Matrix in compressed-column or triplet form</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.linsys_solver.html"
+                                  title='struct osqp_sys::linsys_solver'>linsys_solver</a></td>
+                           <td class='docblock-short'>
+                                <p>Define linsys_solver prototype structure</p>
+
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.OSQPTimer.html"
+                                  title='enum osqp_sys::OSQPTimer'>OSQPTimer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MKL_PARDISO_SOLVER.html"
+                                  title='constant osqp_sys::MKL_PARDISO_SOLVER'>MKL_PARDISO_SOLVER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_DUAL_INFEASIBLE.html"
+                                  title='constant osqp_sys::OSQP_DUAL_INFEASIBLE'>OSQP_DUAL_INFEASIBLE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_DUAL_INFEASIBLE_INACCURATE.html"
+                                  title='constant osqp_sys::OSQP_DUAL_INFEASIBLE_INACCURATE'>OSQP_DUAL_INFEASIBLE_INACCURATE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_MAX_ITER_REACHED.html"
+                                  title='constant osqp_sys::OSQP_MAX_ITER_REACHED'>OSQP_MAX_ITER_REACHED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_NON_CVX.html"
+                                  title='constant osqp_sys::OSQP_NON_CVX'>OSQP_NON_CVX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_PRIMAL_INFEASIBLE.html"
+                                  title='constant osqp_sys::OSQP_PRIMAL_INFEASIBLE'>OSQP_PRIMAL_INFEASIBLE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_PRIMAL_INFEASIBLE_INACCURATE.html"
+                                  title='constant osqp_sys::OSQP_PRIMAL_INFEASIBLE_INACCURATE'>OSQP_PRIMAL_INFEASIBLE_INACCURATE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_SIGINT.html"
+                                  title='constant osqp_sys::OSQP_SIGINT'>OSQP_SIGINT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_SOLVED.html"
+                                  title='constant osqp_sys::OSQP_SOLVED'>OSQP_SOLVED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_SOLVED_INACCURATE.html"
+                                  title='constant osqp_sys::OSQP_SOLVED_INACCURATE'>OSQP_SOLVED_INACCURATE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_TIME_LIMIT_REACHED.html"
+                                  title='constant osqp_sys::OSQP_TIME_LIMIT_REACHED'>OSQP_TIME_LIMIT_REACHED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OSQP_UNSOLVED.html"
+                                  title='constant osqp_sys::OSQP_UNSOLVED'>OSQP_UNSOLVED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.QDLDL_SOLVER.html"
+                                  title='constant osqp_sys::QDLDL_SOLVER'>QDLDL_SOLVER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_cleanup.html"
+                                  title='fn osqp_sys::osqp_cleanup'>osqp_cleanup</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Cleanup workspace by deallocating memory</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_set_default_settings.html"
+                                  title='fn osqp_sys::osqp_set_default_settings'>osqp_set_default_settings</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Set default settings from constants.h file
+assumes settings already allocated in memory
+@param settings settings structure</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_setup.html"
+                                  title='fn osqp_sys::osqp_setup'>osqp_setup</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Initialize OSQP solver allocating memory.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_solve.html"
+                                  title='fn osqp_sys::osqp_solve'>osqp_solve</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Solve quadratic program</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_A.html"
+                                  title='fn osqp_sys::osqp_update_A'>osqp_update_A</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update elements of matrix A without changing sparsity structure.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_P.html"
+                                  title='fn osqp_sys::osqp_update_P'>osqp_update_P</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update elements of matrix P (upper-diagonal)
+without changing sparsity structure.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_P_A.html"
+                                  title='fn osqp_sys::osqp_update_P_A'>osqp_update_P_A</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update elements of matrix P (upper-diagonal) and elements of matrix A
+without changing sparsity structure.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_alpha.html"
+                                  title='fn osqp_sys::osqp_update_alpha'>osqp_update_alpha</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update relaxation parameter alpha
+@param  work  Workspace
+@param  alpha_new New relaxation parameter value
+@return       Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_bounds.html"
+                                  title='fn osqp_sys::osqp_update_bounds'>osqp_update_bounds</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update lower and upper bounds in the problem constraints
+@param  work   Workspace
+@param  l_new New lower bound
+@param  u_new New upper bound
+@return        Exitflag: 1 if new lower bound is not &lt;= than new upper bound</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_check_termination.html"
+                                  title='fn osqp_sys::osqp_update_check_termination'>osqp_update_check_termination</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update check_termination setting
+@param  work                   Workspace
+@param  check_termination_new  New check_termination setting
+@return                        Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_delta.html"
+                                  title='fn osqp_sys::osqp_update_delta'>osqp_update_delta</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update regularization parameter in polish
+@param  work      Workspace
+@param  delta_new New regularization parameter
+@return           Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_eps_abs.html"
+                                  title='fn osqp_sys::osqp_update_eps_abs'>osqp_update_eps_abs</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update absolute tolernace value
+@param  work        Workspace
+@param  eps_abs_new New absolute tolerance value
+@return             Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_eps_dual_inf.html"
+                                  title='fn osqp_sys::osqp_update_eps_dual_inf'>osqp_update_eps_dual_inf</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update dual infeasibility tolerance
+@param  work          Workspace
+@param  eps_dual_inf_new  New dual infeasibility tolerance
+@return               Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_eps_prim_inf.html"
+                                  title='fn osqp_sys::osqp_update_eps_prim_inf'>osqp_update_eps_prim_inf</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update primal infeasibility tolerance
+@param  work          Workspace
+@param  eps_prim_inf_new  New primal infeasibility tolerance
+@return               Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_eps_rel.html"
+                                  title='fn osqp_sys::osqp_update_eps_rel'>osqp_update_eps_rel</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update relative tolernace value
+@param  work        Workspace
+@param  eps_rel_new New relative tolerance value
+@return             Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_lin_cost.html"
+                                  title='fn osqp_sys::osqp_update_lin_cost'>osqp_update_lin_cost</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update linear cost in the problem
+@param  work  Workspace
+@param  q_new New linear cost
+@return       Exitflag for errors and warnings</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_lower_bound.html"
+                                  title='fn osqp_sys::osqp_update_lower_bound'>osqp_update_lower_bound</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update lower bound in the problem constraints
+@param  work   Workspace
+@param  l_new New lower bound
+@return        Exitflag: 1 if new lower bound is not &lt;= than upper bound</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_max_iter.html"
+                                  title='fn osqp_sys::osqp_update_max_iter'>osqp_update_max_iter</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update max_iter setting
+@param  work         Workspace
+@param  max_iter_new New max_iter setting
+@return              Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_polish.html"
+                                  title='fn osqp_sys::osqp_update_polish'>osqp_update_polish</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update polish setting
+@param  work          Workspace
+@param  polish_new New polish setting
+@return               Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_polish_refine_iter.html"
+                                  title='fn osqp_sys::osqp_update_polish_refine_iter'>osqp_update_polish_refine_iter</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update number of iterative refinement steps in polish
+@param  work                Workspace
+@param  polish_refine_iter_new New iterative reginement steps
+@return                     Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_rho.html"
+                                  title='fn osqp_sys::osqp_update_rho'>osqp_update_rho</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update rho. Limit it between RHO_MIN and RHO_MAX.
+@param  work         Workspace
+@param  rho_new      New rho setting
+@return              Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_scaled_termination.html"
+                                  title='fn osqp_sys::osqp_update_scaled_termination'>osqp_update_scaled_termination</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update scaled_termination setting
+@param  work                 Workspace
+@param  scaled_termination_new  New scaled_termination setting
+@return                      Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_time_limit.html"
+                                  title='fn osqp_sys::osqp_update_time_limit'>osqp_update_time_limit</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update time_limit setting
+@param  work            Workspace
+@param  time_limit_new  New time_limit setting
+@return                 Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_upper_bound.html"
+                                  title='fn osqp_sys::osqp_update_upper_bound'>osqp_update_upper_bound</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update upper bound in the problem constraints
+@param  work   Workspace
+@param  u_new New upper bound
+@return        Exitflag: 1 if new upper bound is not &gt;= than lower bound</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_verbose.html"
+                                  title='fn osqp_sys::osqp_update_verbose'>osqp_update_verbose</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update verbose setting
+@param  work        Workspace
+@param  verbose_new New verbose setting
+@return             Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_update_warm_start.html"
+                                  title='fn osqp_sys::osqp_update_warm_start'>osqp_update_warm_start</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Update warm_start setting
+@param  work           Workspace
+@param  warm_start_new New warm_start setting
+@return                Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_warm_start.html"
+                                  title='fn osqp_sys::osqp_warm_start'>osqp_warm_start</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Warm start primal and dual variables
+@param  work Workspace structure
+@param  x    Primal variable
+@param  y    Dual variable
+@return      Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_warm_start_x.html"
+                                  title='fn osqp_sys::osqp_warm_start_x'>osqp_warm_start_x</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Warm start primal variable
+@param  work Workspace structure
+@param  x    Primal variable
+@return      Exitflag</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.osqp_warm_start_y.html"
+                                  title='fn osqp_sys::osqp_warm_start_y'>osqp_warm_start_y</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Warm start dual variable
+@param  work Workspace structure
+@param  y    Dual variable
+@return      Exitflag</p>
+
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.LinSysSolver.html"
+                                  title='type osqp_sys::LinSysSolver'>LinSysSolver</a></td>
+                           <td class='docblock-short'>
+                                <p>Linear system solver structure (sublevel objects initialize it differently)</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.ffi_osqp_status.html"
+                                  title='type osqp_sys::ffi_osqp_status'>ffi_osqp_status</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.linsys_solver_type.html"
+                                  title='type osqp_sys::linsys_solver_type'>linsys_solver_type</a></td>
+                           <td class='docblock-short'>
+                                <p>Linear System Solvers *</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.osqp_float.html"
+                                  title='type osqp_sys::osqp_float'>osqp_float</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.osqp_int.html"
+                                  title='type osqp_sys::osqp_int'>osqp_int</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "osqp_sys";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>
